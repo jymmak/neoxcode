@@ -328,3 +328,8 @@ div#posterMovie {
 .navbar-collapse.navbar-ex1-collapse.collapse.in {
   overflow: hidden;
 }
+img#img-user {
+  border-radius: 50%;
+  width: 100px;
+  margin: 0 auto;
+}
