@@ -46,7 +46,7 @@ function renderMovies(response) {
     firebase.auth().onAuthStateChanged(function(user) {
       var uid = user.uid;
       Addmoviesseen(imdbID, uid, titleMovie, posterMovie, ratingMovie);
-      alert('Se ha añadido a su seccion favoritos');
+      $('#myModal').modal('show');
     });
   });
 }
