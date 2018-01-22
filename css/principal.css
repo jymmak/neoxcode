@@ -333,3 +333,15 @@ img#img-user {
   width: 100px;
   margin: 0 auto;
 }
+
+span.movietitle{
+  color: white;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+.box-movie{
+  margin-bottom: 40px;
+}
