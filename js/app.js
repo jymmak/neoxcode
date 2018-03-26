@@ -76,7 +76,7 @@
 function singOff() {
   window.location.href = '../index.html';
 }
-$('#logout').click(singOff);
+$('.sign-off').click(singOff);
   
 function next() {
   window.location.href = '../views/we.html';

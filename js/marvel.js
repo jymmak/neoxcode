@@ -318,25 +318,47 @@ function showHero(e) {
   var hero =
 
                   `<div class="ed-container border back-categories">
-                  <div class="ed-item s-50">
-                      <img src="${img}" alt="" class="img_categories">
+                  <div class="ed-item s-50 img_categories ${e.id}">
+                      <img src="${img}" alt="" >
                     </div>
-                    <div class="ed-item s-50">
-                          <h3 class="title"> ${e.name } </h3>
-                          <p ><b>ULTIMA ACTUALIZACION</b> : ${e.modified}  </p>
-                          <p ><b>EVENTOS PARTICIPADOS</b> :  ${ e.events.available} </p>
-                          <p ><b>NOMBRE DEL EVENTO PARTICIPADO</b>: ${nameEvents}</p>
-                          <p ><b>N° HISTORIETAS</b> :  ${e.stories.available}</p>
-                          <p ><b>N° DE SERIE </b>:  ${e.series.available}</p>
-                          <p ><b>NOMBRES SERIES</b>:  ${nameSeries}</p>
-                          <p ><b>N° COMICS</b> :  ${e.comics.available }</p>
-                          <p ><b>NOMBRES COMICS</b>:  ${nameComics }</p>
+                   
                   </div>
+                  
+                  <div class="modal fade" id="a${e.id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                        <h3 class="title"> ${e.name } </h3>
+                        <p ><b>ULTIMA ACTUALIZACION</b> : ${e.modified}  </p>
+                        <p ><b>EVENTOS PARTICIPADOS</b> :  ${ e.events.available} </p>
+                        <p ><b>NOMBRE DEL EVENTO PARTICIPADO</b>: ${nameEvents}</p>
+                        <p ><b>N° HISTORIETAS</b> :  ${e.stories.available}</p>
+                        <p ><b>N° DE SERIE </b>:  ${e.series.available}</p>
+                        <p ><b>NOMBRES SERIES</b>:  ${nameSeries}</p>
+                        <p ><b>N° COMICS</b> :  ${e.comics.available }</p>
+                        <p ><b>NOMBRES COMICS</b>:  ${nameComics }</p>                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>`;
 
 
   content.append(hero);
+  boxpersonaje=$('.' + e.id);
+boxpersonaje.on('click',hola)
+
+function hola(){
+  $('#a'+ e.id).modal('show')           
+};
 }
+
 
 function showComics(e) {
   var nameEvents = $.map(e.events.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
