@@ -54,7 +54,7 @@ body{
        /* outline: 1px solid red; */
         background: #2a3d46;
         position: relative;
-        height: 300px;
+        height: 400px;
         margin-left: 12px;
     }
     .information h3 {
@@ -90,7 +90,7 @@ body{
     .slideshow {
       overflow: hidden;
       width: 105%;
-      height: 30%;
+    
     }
 
     #menu{
@@ -287,6 +287,7 @@ img.kami, img.jenny, img.jymma, img.flora{
 
 .img_categories{
   border: 1px solid rgb(5, 3, 4);
+  width: 50%;
 }
 
 .center-all{
