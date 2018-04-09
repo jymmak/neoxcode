@@ -70,7 +70,7 @@ body{
         color: #FFF;
         display: block;
         padding: 13px 17px;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         text-decoration: none;
     }
 
@@ -277,10 +277,6 @@ img.kami, img.jenny, img.jymma, img.flora{
   background: #C22D33;
 }
 
-.img_categories{
-  border: 1px solid rgb(5, 3, 4);
-  width: 50%;
-}
 
 .center-all{
   margin-right: 20px;
