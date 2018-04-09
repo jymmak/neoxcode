@@ -12,6 +12,13 @@
   <link rel="stylesheet" href="../css/ed-grid.min.css">
   <link href="https://fonts.googleapis.com/css?family=Anton|Risque|Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="../css/principal.css">
+  <style type=&amp;amp;amp;#039;text/css&amp;amp;amp;#039;>
+    .thumbnail{ position: relative; z-index: 0; }
+    .thumbnail:hover{ background-color: transparent; z-index: 50; }
+    .thumbnail span{ /* Estilos para la imagen agrandada */ position: absolute; background-color: black; padding: 5px; left: -100px; border: 5px double gray; visibility: hidden; color: #ffffff; text-decoration: none; }
+    .thumbnail span img{ border-width: 0; padding: 2px; }
+    .thumbnail:hover span{ visibility: visible; top: -100; left: 0px; }
+    </style>
 </head>
 
 <body>

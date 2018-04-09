@@ -201,7 +201,7 @@ function showSeries(e) {
 
     `<div class="ed-container back-categories">
         <div class="ed-item s-50">
-            <img src="${img}" alt="" class="img_categories">
+            <img src="${img}" alt="" href="#thumb" class="img_categories">
           </div>
           <div class="ed-item s-50">
                <h3 class="title"> ${e.title}</h3>
@@ -241,7 +241,7 @@ function showEvents(e) {
   var hero =
     `<div class="ed-container back-categories">
                    <div class="ed-item s-50">
-                       <img src="${img}" alt="" class="img_categories">
+                       <img src="${img}" alt="" href="#thumb" class="img_categories">
                      </div>
                      <div class="ed-item s-50">
                      <h3 class="title"> ${ e.title}</h3>
@@ -313,7 +313,7 @@ function showHero(e) {
 
     `<div class="ed-container border back-categories">
                   <div class="ed-item s-50 img_categories ${e.id}">
-                      <img src="${img}" alt="" >
+                      <img src="${img}" alt="" href="#thumb">
                     </div>
                    
                   </div>
@@ -369,7 +369,7 @@ function showComics(e) {
 
     `<div class="ed-container back-categories">
                   <div class="ed-item s-50">
-                      <img src="${img}" alt="" class="img_categories">
+                      <img src="${img}" alt="" href="#thumb" class="img_categories">
                     </div>
                     <div class="ed-item s-50">
                            <p ><b>DESCRIPCION</b> :  ${e.description}</p>
