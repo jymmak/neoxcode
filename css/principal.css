@@ -315,5 +315,10 @@ span.movietitle{
   margin-bottom: 40px;
 }
 .ed-container{
-  margin-top: 6%;
+  margin-top: 2%;
+}
+
+.ed_item{
+  display:inline-block;
+  width: 38%;
 }
