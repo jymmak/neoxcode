@@ -54,9 +54,9 @@ body{
 /* outline: 1px solid red; */
   background: #2a3d46;
   position: relative;
-  height: 380px;
+  height: 350px;
   margin-left: 12px;
-  margin-top: 6%;
+
 }
 
 .information .information_menu {
@@ -73,6 +73,7 @@ body{
   padding: 13px 17px;
   font-size: 1.4rem;
   text-decoration: none;
+  margin-top: 6%;
 }
 
 .information .information_menu li a:hover{
@@ -83,7 +84,7 @@ body{
 .slide {
   overflow: hidden;
   width: 105%;
-  height: 35%;
+  height: 35% !important;
 }
 
 #menu{
