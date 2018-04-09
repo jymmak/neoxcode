@@ -1,8 +1,7 @@
 
 body{
-  background: black;
+  background-color: rgb(213, 223, 228) !important;
 }
-
   .main-container{
   background: #d53369;
   background: -webkit-linear-gradient(to left, #d53369 , #cbad6d);
