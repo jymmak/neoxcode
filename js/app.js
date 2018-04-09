@@ -72,4 +72,4 @@
     console.log(title);
     window.location.href = 'movies.html';
   });
-})();
+});
