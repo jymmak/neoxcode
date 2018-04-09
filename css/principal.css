@@ -311,10 +311,10 @@ img#img-user {
 }
 
 span.movietitle{
-  color: white;
+  color: rgb(7, 5, 5);
   box-sizing: border-box;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 17px;
   text-transform: uppercase;
   padding-left: 20px;
 }
