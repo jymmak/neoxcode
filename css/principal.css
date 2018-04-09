@@ -319,6 +319,6 @@ span.movietitle{
 }
 
 .ed_item{
-  display:inline-block;
-  width: 38%;
+  display:inline-block !important;
+  width: 38% !important;
 }
