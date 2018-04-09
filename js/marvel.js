@@ -22,7 +22,7 @@ function getHero() {
     .then(response => {
       var info = response.data.results; // array con todo los datos de los personajes
       console.log(info);
-      var nameHero = $.map(info, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+      var nameHero = $.map(info, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
         return val.name;
       });
       info.forEach(e => {
@@ -32,7 +32,7 @@ function getHero() {
         infoHero = value;
       }
     })
-    .catch(function(e) {
+    .catch(function (e) {
       alert(e);
     });
 }
@@ -54,19 +54,13 @@ function getComics() {
         showComics(e);
       });
     })
-    .catch(function(e) {
+    .catch(function (e) {
       alert(e);
     });
 }
 
 function getCreators() {
-  // content.html('');
-  // var movie =
-  // fetch('http://www.omdbapi.com/?s=hulk&page=2&apikey=8ad4c53d')
-  // .then(Response=>Response.json())
-  // .then(lugares =>{
-  //   console.log(lugares)
-  // })
+
   content.html('');
   const ts = Date.now();
   const hash = md5(ts + privateKey + publicKey);
@@ -81,7 +75,7 @@ function getCreators() {
         showCreators(e);
       });
     })
-    .catch(function(e) {
+    .catch(function (e) {
       alert(e);
     });
 }
@@ -101,7 +95,7 @@ function getEvents() {
         showEvents(e);
       });
     })
-    .catch(function(e) {
+    .catch(function (e) {
       alert(e);
     });
 }
@@ -120,7 +114,7 @@ function getSeries() {
         showSeries(e);
       });
     })
-    .catch(function(e) {
+    .catch(function (e) {
       alert(e);
     });
 }
@@ -139,37 +133,37 @@ function getStories() {
         showStories(e);
       });
     })
-    .catch(function(e) {
+    .catch(function (e) {
       alert(e);
     });
 }
 
 function showStories(e) {
-  var nameCharacters = $.map(e.characters.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameCharacters = $.map(e.characters.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameComics = $.map(e.comics.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameComics = $.map(e.comics.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameCreators = $.map(e.creators.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameCreators = $.map(e.creators.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameEvents = $.map(e.events.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameEvents = $.map(e.events.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameOrigin = $.map(e.originalIssue.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameOrigin = $.map(e.originalIssue.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameSeries = $.map(e.series.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameSeries = $.map(e.series.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
 
   var hero =
 
-                    `<div class="ed-container back-categories center-all ed-item s-60">
+    `<div class="ed-container back-categories center-all ed-item s-60">
                     <div class="ed-item s-100">
-                          <h3 class="title"> ${ e.type }</h3>
-                          <p ><b>TIPO</b> :  ${e.title }</p>
+                          <h3 class="title"> ${ e.type}</h3>
+                          <p ><b>TIPO</b> :  ${e.title}</p>
                           <p ><b>N° COMICS </b>:  ${ e.comics.available}</p>
                           <p ><b>NOMBRE COMICS</b> :  ${nameComics}</p>
                           <p ><b>N° PERSONAJES </b>: ${e.characters.available}  </p>
@@ -178,9 +172,9 @@ function showStories(e) {
                           <p ><b>NOMBRES CREADORES</b> :  ${nameCreators}</p>
                           <p ><b>N° DE SERIE</b> :  ${e.series.available}</p>
                           <p ><b>NOMBRES SERIE<b>:  ${nameSeries}</p>
-                          <p ><b>N° DE EVENTOS</b> :  ${e.events.available }</p>
+                          <p ><b>N° DE EVENTOS</b> :  ${e.events.available}</p>
                           <p ><b>NOMBRES EVENTOS</b>:  ${nameEvents}</p>
-                          <p ><b>N° DE originalIssue</b> :  ${e.originalIssue.available }</p>
+                          <p ><b>N° DE originalIssue</b> :  ${e.originalIssue.available}</p>
                           <p >NOMBRES originalIssue</b>:  ${nameOrigin}</p>
                     </div>
                     </div>`;
@@ -190,22 +184,22 @@ function showStories(e) {
 }
 
 function showSeries(e) {
-  var nameEvents = $.map(e.events.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameEvents = $.map(e.events.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameComics = $.map(e.comics.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameComics = $.map(e.comics.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameCreators = $.map(e.creators.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameCreators = $.map(e.creators.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameStories = $.map(e.stories.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameStories = $.map(e.stories.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
   var img = e.thumbnail.path + '/portrait_uncanny.' + e.thumbnail.extension;
   var hero =
 
-        `<div class="ed-container back-categories">
+    `<div class="ed-container back-categories">
         <div class="ed-item s-50">
             <img src="${img}" alt="" class="img_categories">
           </div>
@@ -228,29 +222,29 @@ function showSeries(e) {
 
 function showEvents(e) {
   console.log(e);
-  var nameCharacters = $.map(e.characters.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameCharacters = $.map(e.characters.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameComics = $.map(e.comics.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameComics = $.map(e.comics.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameCreators = $.map(e.creators.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameCreators = $.map(e.creators.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameStories = $.map(e.stories.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameStories = $.map(e.stories.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameSeries = $.map(e.series.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameSeries = $.map(e.series.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
   var img = e.thumbnail.path + '/portrait_uncanny.' + e.thumbnail.extension;
   var hero =
-            `<div class="ed-container back-categories">
+    `<div class="ed-container back-categories">
                    <div class="ed-item s-50">
                        <img src="${img}" alt="" class="img_categories">
                      </div>
                      <div class="ed-item s-50">
-                     <h3 class="title"> ${ e.title }</h3>
+                     <h3 class="title"> ${ e.title}</h3>
                            <p ><b>N° COMICS </b>:  ${e.description}</p>
                            <p ><b>N° PERSONAJES </b>: ${e.characters.available}  </p>
                            <p ><b>PERSONAJES </b>:  ${nameCharacters} </p>
@@ -269,32 +263,32 @@ function showEvents(e) {
 }
 
 function showCreators(e) {
-  var nameEvents = $.map(e.events.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameEvents = $.map(e.events.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameComics = $.map(e.comics.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameComics = $.map(e.comics.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameSeries = $.map(e.series.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameSeries = $.map(e.series.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.type;
   });
-  var nameStories = $.map(e.stories.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameStories = $.map(e.stories.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.type;
   });
   var hero =
-                  '<div class="ed-item s-1-3 back-categories">' +
-                  '<h3 class="title">' + e.firstName + '</h3>' +
-                  '<div class="">' +
-                  '<p ><b>N° DE COMICS</b> : ' + e.comics.available + '</p>' +
-                  '<p ><b>NOMBRE DE COMICS</b>: ' + nameComics + '</p>' +
-                  '<p ><b>N °DE EVENTOS </b>: ' + e.events.available + '</p>' +
-                  '<p ><b>NOMBRE DE EVENTOS</b>: ' + nameEvents + '</p>' +
-                  '<p ><b>N° DE SERIES</b> : ' + e.series.available + '</p>' +
-                  '<p ><b>NOMBRE DE SERIES</b>: ' + nameSeries + '</p>' +
-                  '<p ><b>N° DE HISTORIETAS</b> : ' + e.stories.available + '</p>' +
-                  '<p ><b>NOMBRE DE HISTORIETAS</b>: ' + nameStories + '</p>' +
-                  '</div>' +
-                  '</div>';
+    '<div class="ed-item s-1-3 back-categories">' +
+    '<h3 class="title">' + e.firstName + '</h3>' +
+    '<div class="">' +
+    '<p ><b>N° DE COMICS</b> : ' + e.comics.available + '</p>' +
+    '<p ><b>NOMBRE DE COMICS</b>: ' + nameComics + '</p>' +
+    '<p ><b>N °DE EVENTOS </b>: ' + e.events.available + '</p>' +
+    '<p ><b>NOMBRE DE EVENTOS</b>: ' + nameEvents + '</p>' +
+    '<p ><b>N° DE SERIES</b> : ' + e.series.available + '</p>' +
+    '<p ><b>NOMBRE DE SERIES</b>: ' + nameSeries + '</p>' +
+    '<p ><b>N° DE HISTORIETAS</b> : ' + e.stories.available + '</p>' +
+    '<p ><b>NOMBRE DE HISTORIETAS</b>: ' + nameStories + '</p>' +
+    '</div>' +
+    '</div>';
 
 
   content.append(hero);
@@ -302,22 +296,22 @@ function showCreators(e) {
 
 
 function showHero(e) {
-  var nameEvents = $.map(e.events.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameEvents = $.map(e.events.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameStories = $.map(e.stories.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameStories = $.map(e.stories.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameSeries = $.map(e.series.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameSeries = $.map(e.series.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameComics = $.map(e.comics.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameComics = $.map(e.comics.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
   var img = e.thumbnail.path + '/portrait_uncanny.' + e.thumbnail.extension;
   var hero =
 
-                  `<div class="ed-container border back-categories">
+    `<div class="ed-container border back-categories">
                   <div class="ed-item s-50 img_categories ${e.id}">
                       <img src="${img}" alt="" >
                     </div>
@@ -332,15 +326,15 @@ function showHero(e) {
                           <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                         </div>
                         <div class="modal-body">
-                        <h3 class="title"> ${e.name } </h3>
+                        <h3 class="title"> ${e.name} </h3>
                         <p ><b>ULTIMA ACTUALIZACION</b> : ${e.modified}  </p>
                         <p ><b>EVENTOS PARTICIPADOS</b> :  ${ e.events.available} </p>
                         <p ><b>NOMBRE DEL EVENTO PARTICIPADO</b>: ${nameEvents}</p>
                         <p ><b>N° HISTORIETAS</b> :  ${e.stories.available}</p>
                         <p ><b>N° DE SERIE </b>:  ${e.series.available}</p>
                         <p ><b>NOMBRES SERIES</b>:  ${nameSeries}</p>
-                        <p ><b>N° COMICS</b> :  ${e.comics.available }</p>
-                        <p ><b>NOMBRES COMICS</b>:  ${nameComics }</p>                        </div>
+                        <p ><b>N° COMICS</b> :  ${e.comics.available}</p>
+                        <p ><b>NOMBRES COMICS</b>:  ${nameComics}</p>                        </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                           <button type="button" class="btn btn-primary">Save changes</button>
@@ -351,29 +345,29 @@ function showHero(e) {
 
 
   content.append(hero);
-  boxpersonaje=$('.' + e.id);
-boxpersonaje.on('click',hola)
+  boxpersonaje = $('.' + e.id);
+  boxpersonaje.on('click', hola)
 
-function hola(){
-  $('#a'+ e.id).modal('show')           
-};
+  function hola() {
+    $('#a' + e.id).modal('show')
+  };
 }
 
 
 function showComics(e) {
-  var nameEvents = $.map(e.events.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameEvents = $.map(e.events.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var nameStories = $.map(e.stories.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var nameStories = $.map(e.stories.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.name;
   });
-  var typeStories = $.map(e.stories.items, function(val, i) { // Array con los nombres de heroes para la busqueda de restauranets
+  var typeStories = $.map(e.stories.items, function (val, i) { // Array con los nombres de heroes para la busqueda de restauranets
     return val.type;
   });
   var img = e.thumbnail.path + '/portrait_uncanny.' + e.thumbnail.extension;
   var hero =
 
-                  `<div class="ed-container back-categories">
+    `<div class="ed-container back-categories">
                   <div class="ed-item s-50">
                       <img src="${img}" alt="" class="img_categories">
                     </div>
