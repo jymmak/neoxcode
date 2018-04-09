@@ -54,10 +54,17 @@ body{
 /* outline: 1px solid red; */
   background: #2a3d46;
   position: relative;
-  height: 300px;
+  height: 500px;
   margin-left: 12px;
 }
-
+.information h3 {
+  font-size: 34px;
+  font-size: 3.4rem;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  color: #FFF;
+  padding: 0 15px;
+}
 .information .information_menu {
   padding: 0;
 }
@@ -69,8 +76,8 @@ body{
 .information .information_menu li a {
   color: #FFF;
   display: block;
-  padding: 13px 17px;
-  font-size: 1.4rem;
+  padding: 20px 24px;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
