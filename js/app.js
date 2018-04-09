@@ -73,18 +73,3 @@
     window.location.href = 'movies.html';
   });
 })();
-function singOff() {
-  window.location.href = '../index.html';
-}
-$('.sign-off').click(singOff);
-  
-function next() {
-  window.location.href = '../views/we.html';
-}
-$('.we').click(next);
-
-function backico() {
-  window.location.href = '../views/home.html';
-}
-$('.backico').click(backico);
-  
