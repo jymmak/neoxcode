@@ -54,7 +54,7 @@ body{
        /* outline: 1px solid red; */
         background: #2a3d46;
         position: relative;
-        height: 500px;
+        height: 300px;
         margin-left: 12px;
     }
     .information h3 {
@@ -90,6 +90,7 @@ body{
     .slideshow {
       overflow: hidden;
       width: 105%;
+      height: 30%;
     }
 
     #menu{
@@ -156,10 +157,6 @@ body{
     padding: 1em;
 
 }
-iframe{
-
-}
-
 
 
 /*footer*/
