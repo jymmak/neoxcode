@@ -280,11 +280,6 @@ img.kami, img.jenny, img.jymma, img.flora{
 
 /*Estilos de imagenes de la data */
 
-.back-categories{
-  background:rgb(2, 2, 2);
-  border: 1px solid gray;
-  font-family: 'Ubuntu', sans-serif;
-}
 
 .title{
 
@@ -294,7 +289,7 @@ img.kami, img.jenny, img.jymma, img.flora{
 }
 
 .img_categories{
-  border: 10px solid #A1646A;
+  border: 1px solid rgb(14, 8, 9);
 }
 
 .center-all{
