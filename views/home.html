@@ -13,12 +13,39 @@
   <link href="https://fonts.googleapis.com/css?family=Anton|Risque|Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="../css/principal.css">
   <style type=&amp;amp;amp;#039;text/css&amp;amp;amp;#039;>
-    .thumbnail{ position: relative; z-index: 0; }
-    .thumbnail:hover{ background-color: transparent; z-index: 50; }
-    .thumbnail span{ /* Estilos para la imagen agrandada */ position: absolute; background-color: black; padding: 5px; left: -100px; border: 5px double gray; visibility: hidden; color: #ffffff; text-decoration: none; }
-    .thumbnail span img{ border-width: 0; padding: 2px; }
-    .thumbnail:hover span{ visibility: visible; top: -100; left: 0px; }
-    </style>
+    .thumbnail {
+      position: relative;
+      z-index: 0;
+    }
+
+    .thumbnail:hover {
+      background-color: transparent;
+      z-index: 50;
+    }
+
+    .thumbnail span {
+      /* Estilos para la imagen agrandada */
+      position: absolute;
+      background-color: black;
+      padding: 5px;
+      left: -100px;
+      border: 5px double gray;
+      visibility: hidden;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .thumbnail span img {
+      border-width: 0;
+      padding: 2px;
+    }
+
+    .thumbnail:hover span {
+      visibility: visible;
+      top: -100;
+      left: 0px;
+    }
+  </style>
 </head>
 
 <body>
@@ -91,10 +118,7 @@
       <div class=" col-xs-12 col-lg-3 information ">
         <h3>NeoxCinema</h3>
         <ul class="information_menu">
-          <li class="active" data-id="1" id="personaje">
-            <a>
-              <span class="glyphicon glyphicon-ok-sign"></span> PERSONAJES </a>
-          </li>
+
           <li data-id="2" id="comics">
             <a>
               <span class="glyphicon glyphicon-ok-sign"></span> COMICS</a>
@@ -115,6 +139,10 @@
           <li data-id="4" id="stories">
             <a>
               <span class="glyphicon glyphicon-ok-sign"></span> HISTORIETAS</a>
+          </li>
+          <li class="active" data-id="1" id="personaje">
+            <a>
+              <span class="glyphicon glyphicon-ok-sign"></span> PERSONAJES </a>
           </li>
         </ul>
       </div>
@@ -156,7 +184,7 @@
         <div id="content2" class="container-api col-md-12 container-fluid">
 
         </div>
-    
+
       </div>
 
     </div>

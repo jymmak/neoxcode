@@ -321,7 +321,7 @@ span.movietitle{
 .box-movie{
   margin-bottom: 40px;
 }
-.container-api{
+.container-api, .ed-container{
   margin-top: 2%;
   display: inline-block !important;
 }
