@@ -323,8 +323,9 @@ span.movietitle{
 }
 .ed-container{
   margin-top: 2%;
-  width: 80% !important;
-  display: 
+  width: 100% !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
 }
 
 .ed_item{
