@@ -160,7 +160,7 @@ function showStories(e) {
 
   var hero =
 
-    `<div class="ed-container back-categories center-all ed-item s-60">
+    `<div class="container-api back-categories center-all ed-item s-60">
                     <div class="ed-item s-100">
                           <h3 class="title"> ${ e.type}</h3>
                           <p ><b>TIPO</b> :  ${e.title}</p>
@@ -199,7 +199,7 @@ function showSeries(e) {
   var img = e.thumbnail.path + '/portrait_uncanny.' + e.thumbnail.extension;
   var hero =
 
-    `<div class="ed-container back-categories">
+    `<div class="container-api back-categories">
         <div class="ed-item s-50">
             <img src="${img}" alt="" href="#thumb" class="img_categories">
           </div>
@@ -239,7 +239,7 @@ function showEvents(e) {
   });
   var img = e.thumbnail.path + '/portrait_uncanny.' + e.thumbnail.extension;
   var hero =
-    `<div class="ed-container back-categories">
+    `<div class="container-api back-categories">
                    <div class="ed-item s-50">
                        <img src="${img}" alt="" href="#thumb" class="img_categories">
                      </div>
@@ -311,7 +311,7 @@ function showHero(e) {
   var img = e.thumbnail.path + '/portrait_uncanny.' + e.thumbnail.extension;
   var hero =
 
-    `<div class="ed-container border back-categories">
+    `<div class="container-api border back-categories">
                   <div class="ed-item s-50 img_categories ${e.id}">
                       <img src="${img}" alt="" href="#thumb">
                     </div>
@@ -367,7 +367,7 @@ function showComics(e) {
   var img = e.thumbnail.path + '/portrait_uncanny.' + e.thumbnail.extension;
   var hero =
 
-    `<div class="ed-container back-categories">
+    `<div class="container-api back-categories">
                   <div class="ed-item s-50">
                       <img src="${img}" alt="" href="#thumb" class="img_categories">
                     </div>
