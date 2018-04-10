@@ -311,7 +311,7 @@ function showHero(e) {
   var img = e.thumbnail.path + '/portrait_uncanny.' + e.thumbnail.extension;
   var hero =
 
-    `<div class="ed-container border back-categories">
+    `<div class="ed-container">
                   <div class="ed-item s-50 img_categories ${e.id}">
                       <img src="${img}" alt="" href="#thumb">
                     </div>
