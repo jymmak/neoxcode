@@ -1,6 +1,7 @@
 const privateKey = 'b6e70892a136224b29536bdc712008ee40b2cea4', publicKey = 'ef09d8f0880469e7e8d437f84f49abbd';
 
 var content = $('#content');
+var content2 = $('#content2');
 
 // ancors callback event
 var search = $('#search');
@@ -160,7 +161,7 @@ function showStories(e) {
 
   var hero =
 
-    `<div class="container-api back-categories center-all ed-item s-60">
+    `<div class="ed-container back-categories center-all ed-item s-60">
                     <div class="ed-item s-100">
                           <h3 class="title"> ${ e.type}</h3>
                           <p ><b>TIPO</b> :  ${e.title}</p>
@@ -199,7 +200,7 @@ function showSeries(e) {
   var img = e.thumbnail.path + '/portrait_uncanny.' + e.thumbnail.extension;
   var hero =
 
-    `<div class="container-api back-categories">
+    `<div class="ed-container back-categories">
         <div class="ed-item s-50">
             <img src="${img}" alt="" href="#thumb" class="img_categories">
           </div>
@@ -239,7 +240,7 @@ function showEvents(e) {
   });
   var img = e.thumbnail.path + '/portrait_uncanny.' + e.thumbnail.extension;
   var hero =
-    `<div class="container-api back-categories">
+    `<div class="ed-container back-categories">
                    <div class="ed-item s-50">
                        <img src="${img}" alt="" href="#thumb" class="img_categories">
                      </div>
@@ -276,7 +277,7 @@ function showCreators(e) {
     return val.type;
   });
   var hero =
-    '<div class="ed-item s-1-3 back-categories">' +
+    '<div class="ed-container ed-item s-1-3 back-categories">' +
     '<h3 class="title">' + e.firstName + '</h3>' +
     '<div class="">' +
     '<p ><b>N° DE COMICS</b> : ' + e.comics.available + '</p>' +
@@ -344,7 +345,7 @@ function showHero(e) {
                   </div>`;
 
 
-  content.append(hero);
+  content2.append(hero);
   boxpersonaje = $('.' + e.id);
   boxpersonaje.on('click', hola)
 
@@ -367,7 +368,7 @@ function showComics(e) {
   var img = e.thumbnail.path + '/portrait_uncanny.' + e.thumbnail.extension;
   var hero =
 
-    `<div class="container-api back-categories">
+    `<div class="ed-container back-categories">
                   <div class="ed-item s-50">
                       <img src="${img}" alt="" href="#thumb" class="img_categories">
                     </div>
