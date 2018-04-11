@@ -161,7 +161,7 @@ function showStories(e) {
 
   var hero =
 
-    `<div class="ed-container back-categories center-all ed-item s-60">
+    `<div class="ed-container back-categories center-all justify-content-center  ed-item s-60">
                     <div class="ed-item s-100">
                           <h3 class="title"> ${ e.type}</h3>
                           <p ><b>TIPO</b> :  ${e.title}</p>
@@ -277,7 +277,7 @@ function showCreators(e) {
     return val.type;
   });
   var hero =
-    '<div class="ed-container ed-item s-1-3 back-categories">' +
+    '<div class="container-api ed-item s-1-3 back-categories">' +
     '<h3 class="title">' + e.firstName + '</h3>' +
     '<div class="">' +
     '<p ><b>N° DE COMICS</b> : ' + e.comics.available + '</p>' +
