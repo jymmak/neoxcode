@@ -321,11 +321,15 @@ span.movietitle{
 .box-movie{
   margin-bottom: 40px;
 }
-.container-api, .ed-container{
+.ed-container{
   margin-top: 2%;
   display: inline-block !important;
 }
+.container-api{
+  margin-top: 2%;
+  display: inline-block !important;
 
+}
 .ed_item{
   display:inline-block !important;
   width: 38% !important;
