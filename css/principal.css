@@ -323,12 +323,11 @@ span.movietitle{
 }
 .ed-container{
   margin-top: 2%;
-  display: inline-block !important;
 }
 .container-api{
   margin-top: 2%;
   display: inline-block !important;
-
+  margin-left: 5%;
 }
 .ed_item{
   display:inline-block !important;
